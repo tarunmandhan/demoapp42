@@ -1,9 +1,11 @@
 import React from "react";
+import Header from "./Component/Header";
 
 const Contact = () => {
   return (
     <>
-      <h1>Pawan</h1>
+      <Header />
+      <h1>Contact Pawan</h1>
     </>
   );
 };
