@@ -10,6 +10,13 @@ const About = () => {
     <>
       <h1>About tarun </h1>
       <button onClick={() => goToContact()}>go to Contact page</button>
+      <button
+        onClick={() => {
+          navigate(-1);
+        }}
+      >
+        go back
+      </button>
     </>
   );
 };
