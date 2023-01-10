@@ -4,6 +4,7 @@ import About from "./About";
 import Contact from "./Contact";
 import Error from "./Error";
 import Home from "./Home";
+import "./App.css";
 
 const App = () => {
   const Name = () => {
@@ -13,10 +14,11 @@ const App = () => {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/"      element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="*"      element={<Error />} />
+          <Route path="*" element={<Error />} />
+          <Route />
         </Routes>
       </BrowserRouter>
     </>
