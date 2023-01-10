@@ -3,3 +3,10 @@
   /* background-color: rgb(177, 206, 211); */
   /* border-radius: 20%; */
 }
+
+header {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
