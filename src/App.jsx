@@ -1,8 +1,9 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./About";
 import Contact from "./Contact";
 import Error from "./Error";
+import Home from "./Home";
 
 const App = () => {
   const Name = () => {
@@ -10,12 +11,14 @@ const App = () => {
   };
   return (
     <>
-      <Routes>
-        <Route path="/" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/contact/Name" element={<Name />} />
-        <Route path="*" element={<Error />} />
-      </Routes>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/"      element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="*"      element={<Error />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 };
